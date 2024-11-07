@@ -1,0 +1,116 @@
+/* Estilo do Menu */
+body{
+    overflow-y: scroll;
+}
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 8px 0px 20px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*z-index: 1000;*/
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/* Estilo da Logo */
+.logo img {
+    width: 109px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-top: 13px;
+    margin-right: 10px;
+}
+
+/* Estilo dos Itens de Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    /*gap: 15px; /* Espaço entre os itens de menu */
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* Links do Menu Principal */
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b2c840; /* Cor ao passar o mouse */
+    color: #fff; /* Texto branco para destacar */
+}
+
+/* Estilo do Dropdown (Submenu) */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona o submenu abaixo do item principal */
+    left: 0;
+    background-color: #fff;
+    box-shadow: -2px 7px 80px rgba(0, 0, 0, 0.185);
+    padding: 10px 0px 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.dropdown li {
+    background-color: #fff;  
+}
+
+.dropdown li a {
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+    border-radius: 0;
+}
+
+.dropdown li a:hover {
+    background-color: #ebebebb2;
+    color: #000000;
+    
+}
+/* Exibe o Dropdown ao passar o mouse */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+i.fas.fa-chevron-down {
+    font-size: 13px;
+}
+
+.menu {
+    justify-content: center;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+button{
+    background-color: #b2c840;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding: 15px 27px 15px 27px;
+    margin-left: 30px;
+    border-radius: 8px;
+    color: white;
+    border-style: none;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: translateY(7px); /* Desloca 7 pixels para baixo ao passar o mouse */
+}
+
+
+
+
